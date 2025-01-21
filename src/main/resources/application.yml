@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: WirelessDataTransfer
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3305/storagedb
+    username: storageuser
+    password: storageuser
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+  ldap:
+    urls: ldap://localhost:10389
+
